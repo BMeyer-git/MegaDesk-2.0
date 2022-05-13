@@ -30,12 +30,12 @@
         {
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.width = new System.Windows.Forms.NumericUpDown();
+            this.numWidth = new System.Windows.Forms.NumericUpDown();
             this.comboMaterial = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textCustomerName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.depth = new System.Windows.Forms.NumericUpDown();
+            this.numDepth = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.comboDelivery = new System.Windows.Forms.ComboBox();
@@ -45,8 +45,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.width)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.depth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDepth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numberOfDrawers)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,7 @@
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -70,23 +71,23 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // width
+            // numWidth
             // 
-            this.width.Location = new System.Drawing.Point(217, 129);
-            this.width.Maximum = new decimal(new int[] {
+            this.numWidth.Location = new System.Drawing.Point(217, 129);
+            this.numWidth.Maximum = new decimal(new int[] {
             96,
             0,
             0,
             0});
-            this.width.Minimum = new decimal(new int[] {
+            this.numWidth.Minimum = new decimal(new int[] {
             24,
             0,
             0,
             0});
-            this.width.Name = "width";
-            this.width.Size = new System.Drawing.Size(120, 20);
-            this.width.TabIndex = 2;
-            this.width.Value = new decimal(new int[] {
+            this.numWidth.Name = "numWidth";
+            this.numWidth.Size = new System.Drawing.Size(120, 20);
+            this.numWidth.TabIndex = 2;
+            this.numWidth.Value = new decimal(new int[] {
             24,
             0,
             0,
@@ -115,12 +116,12 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Width: ";
             // 
-            // textBox1
+            // textCustomerName
             // 
-            this.textBox1.Location = new System.Drawing.Point(237, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(274, 20);
-            this.textBox1.TabIndex = 6;
+            this.textCustomerName.Location = new System.Drawing.Point(237, 63);
+            this.textCustomerName.Name = "textCustomerName";
+            this.textCustomerName.Size = new System.Drawing.Size(274, 20);
+            this.textCustomerName.TabIndex = 6;
             // 
             // label2
             // 
@@ -131,23 +132,23 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Depth: ";
             // 
-            // depth
+            // numDepth
             // 
-            this.depth.Location = new System.Drawing.Point(217, 167);
-            this.depth.Maximum = new decimal(new int[] {
+            this.numDepth.Location = new System.Drawing.Point(217, 167);
+            this.numDepth.Maximum = new decimal(new int[] {
             48,
             0,
             0,
             0});
-            this.depth.Minimum = new decimal(new int[] {
+            this.numDepth.Minimum = new decimal(new int[] {
             12,
             0,
             0,
             0});
-            this.depth.Name = "depth";
-            this.depth.Size = new System.Drawing.Size(120, 20);
-            this.depth.TabIndex = 7;
-            this.depth.Value = new decimal(new int[] {
+            this.numDepth.Name = "numDepth";
+            this.numDepth.Size = new System.Drawing.Size(120, 20);
+            this.numDepth.TabIndex = 7;
+            this.numDepth.Value = new decimal(new int[] {
             12,
             0,
             0,
@@ -256,17 +257,17 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.depth);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.numDepth);
+            this.Controls.Add(this.textCustomerName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.width);
+            this.Controls.Add(this.numWidth);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Name = "AddQuote";
             this.Text = "AddQuote";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddQuote_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.width)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.depth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDepth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numberOfDrawers)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -279,12 +280,12 @@
 
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.NumericUpDown width;
+        private System.Windows.Forms.NumericUpDown numWidth;
         private System.Windows.Forms.ComboBox comboMaterial;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textCustomerName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown depth;
+        private System.Windows.Forms.NumericUpDown numDepth;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboDelivery;
