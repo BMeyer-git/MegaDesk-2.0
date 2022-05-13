@@ -125,7 +125,7 @@ namespace MegaDesk2
 
 
 
-            // Save info at 18:40 if we get stuck
+            // Save info at 18:40 if we get stuck 5/12 session recording
 
             return price;
         }
