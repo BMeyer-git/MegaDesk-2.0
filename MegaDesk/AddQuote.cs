@@ -55,11 +55,8 @@ namespace MegaDesk2
             var price = deskQuote.GetQuotePrice();
 
             WriteQuote(deskQuote);
-           /* try
-            {
-                deskQuote. = price;
-            }*/
 
+            this.Close();
         }
 
         private void WriteQuote(DeskQuote deskQuote) 

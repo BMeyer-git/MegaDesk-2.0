@@ -97,11 +97,11 @@
             // 
             this.comboMaterial.FormattingEnabled = true;
             this.comboMaterial.Items.AddRange(new object[] {
-            "Pine",
             "Laminate",
-            "Veneer",
             "Oak",
-            "Rosewood"});
+            "Rosewood",
+            "Veneer",
+            "Pine"});
             this.comboMaterial.Location = new System.Drawing.Point(124, 49);
             this.comboMaterial.Name = "comboMaterial";
             this.comboMaterial.Size = new System.Drawing.Size(121, 21);

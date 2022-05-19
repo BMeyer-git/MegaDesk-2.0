@@ -41,7 +41,7 @@ namespace MegaDesk2
 
         private void btnSearchQuotes_Click(object sender, EventArgs e)
         {
-            var viewAllQuotes = new ViewAllQuotes(this);
+            var viewAllQuotes = new SearchQuotes(this);
             viewAllQuotes.Show();
 
             this.Hide();

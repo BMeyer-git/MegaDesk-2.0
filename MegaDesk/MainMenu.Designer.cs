@@ -32,6 +32,8 @@
             this.btnViewQuotes = new System.Windows.Forms.Button();
             this.btnSearchQuotes = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAddNewQuote
@@ -74,17 +76,30 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ImageLocation = "https://png.pngtree.com/element_our/20190529/ourlarge/pngtree-wooden-desk-cartoon" +
+    "-decoration-image_1230143.jpg";
+            this.pictureBox1.Location = new System.Drawing.Point(402, 59);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(375, 319);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSearchQuotes);
             this.Controls.Add(this.btnViewQuotes);
             this.Controls.Add(this.btnAddNewQuote);
             this.Name = "MainMenu";
-            this.Text = "MegaDesk-Meyer";
+            this.Text = "MegaDesk-Peterson-Meyer";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -95,6 +110,7 @@
         private System.Windows.Forms.Button btnViewQuotes;
         private System.Windows.Forms.Button btnSearchQuotes;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
