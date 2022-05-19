@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +15,7 @@ namespace MegaDesk2
         Pine
     }
 
-    internal class Desk
+    class Desk
     {
         // constants
 
