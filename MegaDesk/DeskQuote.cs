@@ -1,8 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace MegaDesk2
@@ -75,6 +76,8 @@ namespace MegaDesk2
                     break;
             }
 
+            getRushOrderPrices();
+
             switch(DeliveryType)
             {
                 case Delivery.Rush3Days:
@@ -94,7 +97,7 @@ namespace MegaDesk2
                 case Delivery.Rush5Days:
                     if (deskArea < 1000)
                     {
-                        price = price + _rushOrderPrices[1, 0];
+                        price = price + (int) _rushOrderPrices[1, 0];
                     }
                     else if (deskArea <= 2000)
                     {
@@ -129,6 +132,7 @@ namespace MegaDesk2
 
             return price;
         }
+
 
         private void getRushOrderPrices()
         {
